@@ -35,7 +35,6 @@ export default function Desert({navigation}) {
                   <Avatar rounded source={{uri: deserts.image}}></Avatar>
                   <ListItem.Content>
                     <ListItem.Title>{deserts.name}</ListItem.Title>
-                    
                     <ListItem.Subtitle>{deserts.detail}</ListItem.Subtitle>
                   </ListItem.Content>
                 </ListItem>
@@ -43,9 +42,7 @@ export default function Desert({navigation}) {
             }
             </View>
         </ScrollView>
-
     </SafeAreaView>
-      
     </View>
   );
 }

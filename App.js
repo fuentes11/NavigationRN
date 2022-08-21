@@ -6,12 +6,9 @@ import home from './Screens/home';
 import menu from './Screens/menu';
 import about from './Screens/about';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Drinks from './Screens/drinks';
-import Desert from './Screens/desert';
 import BottomTab from './Controllers/BottomTab';
 
 const Menu = createDrawerNavigator()
-const Stack = createBottomTabNavigator();
 
 export default function App() {
   return (
@@ -23,11 +20,8 @@ export default function App() {
 <Menu.Screen name="TabBar" component={BottomTab} />
 </Menu.Navigator>
 </NavigationContainer>
-
-   
   );
 }
-
 
 const styles = StyleSheet.create({
   container: {

@@ -47,7 +47,6 @@ export default function Menu({navigation}) {
                   <Avatar rounded source={{uri: mennu.image}}></Avatar>
                   <ListItem.Content>
                     <ListItem.Title>{mennu.name}</ListItem.Title>
-                    
                     <ListItem.Subtitle>{mennu.detail}</ListItem.Subtitle>
                   </ListItem.Content>
                 </ListItem>
@@ -55,9 +54,7 @@ export default function Menu({navigation}) {
             }
             </View>
         </ScrollView>
-
     </SafeAreaView>
-      
     </View>
   );
 }

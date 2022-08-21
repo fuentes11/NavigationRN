@@ -35,7 +35,6 @@ export default function Drinks({navigation}) {
                   <Avatar rounded source={{uri: drinkss.image}}></Avatar>
                   <ListItem.Content>
                     <ListItem.Title>{drinkss.name}</ListItem.Title>
-                    
                     <ListItem.Subtitle>{drinkss.detail}</ListItem.Subtitle>
                   </ListItem.Content>
                 </ListItem>
@@ -43,9 +42,7 @@ export default function Drinks({navigation}) {
             }
             </View>
         </ScrollView>
-
     </SafeAreaView>
-      
     </View>
   );
 }

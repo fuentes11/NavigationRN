@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function About() {
+export default function About({navigation}) {
   return (
     <View style={styles.container}>
       <Text>about

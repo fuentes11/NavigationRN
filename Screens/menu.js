@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, SafeAreaView, ScrollView} from 'react-native';
 import { Avatar, ListItem } from 'react-native-elements';
 
 
-const songs = [
+const menu = [
     {
       name: 'cafe latte',
       detail: 'un cafe muy rico con leche',
@@ -42,13 +42,13 @@ export default function Menu({navigation}) {
     <ScrollView style={styles.scroll_container}>
             <View>
             {
-              songs.map((song, i) => (
+              menu.map((mennu, i) => (
                 <ListItem key={i} bottomDivider onPress={() => navigation.navigate("Home")}>
-                  <Avatar rounded source={{uri: song.image}}></Avatar>
+                  <Avatar rounded source={{uri: mennu.image}}></Avatar>
                   <ListItem.Content>
-                    <ListItem.Title>{song.name}</ListItem.Title>
+                    <ListItem.Title>{mennu.name}</ListItem.Title>
                     
-                    <ListItem.Subtitle>{song.detail}</ListItem.Subtitle>
+                    <ListItem.Subtitle>{mennu.detail}</ListItem.Subtitle>
                   </ListItem.Content>
                 </ListItem>
               ))

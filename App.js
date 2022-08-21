@@ -4,7 +4,8 @@ import { createDrawerNavigator } from '@react-navigation/drawer'
 import 'react-native-gesture-handler';
 import home from './Screens/home';
 import menu from './Screens/menu';
-import about from './Screens/about';import BottomTab from './Controllers/BottomTab';
+import about from './Screens/about';
+import BottomTab from './Controllers/BottomTab';
 
 const Menu = createDrawerNavigator()
 
@@ -17,7 +18,7 @@ export default function App() {
 <Menu.Screen name="About" component={about} />
 <Menu.Screen name="TabBar" component={BottomTab} />
 </Menu.Navigator>
-</NavigationContainer>
+  </NavigationContainer>
   );
 }
 
